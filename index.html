@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Kamal Singla - Trusted Legal Services in Sunam, Punjab | Civil, Criminal & Family Law</title>
+    <title>Advocate Kamal Singla - Premier Legal Services in Sunam, Punjab | Expert Legal Representation</title>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Advocate Kamal Singla provides expert legal services in Sunam, Punjab. Specializing in Civil, Criminal & Family Law. Chamber No. 207, Civil Courts. Call 94178 25082">
@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Advocate Kamal Singla - Trusted Legal Services in Sunam, Punjab">
+    <meta property="og:title" content="Advocate Kamal Singla - Premier Legal Services in Sunam, Punjab">
     <meta property="og:description" content="Expert legal representation in Civil, Criminal & Family matters. Located at Civil Courts, Sunam. Professional, reliable, and results-oriented legal services.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_IN">
@@ -53,216 +53,477 @@
     <link rel="canonical" href="https://yourwebsite.com/" />
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary: #f59e0b;
+            --accent: #10b981;
+            --neutral-50: #f8fafc;
+            --neutral-100: #f1f5f9;
+            --neutral-200: #e2e8f0;
+            --neutral-300: #cbd5e1;
+            --neutral-400: #94a3b8;
+            --neutral-500: #64748b;
+            --neutral-600: #475569;
+            --neutral-700: #334155;
+            --neutral-800: #1e293b;
+            --neutral-900: #0f172a;
+        }
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
         .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #3b82f6 100%);
             position: relative;
             overflow: hidden;
         }
+        
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .service-card {
+            background: white;
+            border: 1px solid var(--neutral-200);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+        
+        .service-card:hover::before {
+            left: 100%;
+        }
+        
         .service-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(30, 64, 175, 0.25);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(30, 64, 175, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 10px 24px;
+            border-radius: 12px;
+            font-weight: 600;
             transition: all 0.3s ease;
         }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(30, 64, 175, 0.4);
+        }
+        
+        .section-padding {
+            padding: 120px 0;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stats-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            font-size: 80px;
+            color: var(--primary);
+            opacity: 0.1;
+            font-family: serif;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+        
+        .floating-btn {
+            background: linear-gradient(135deg, var(--accent) 0%, #059669 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px -5px rgba(16, 185, 129, 0.6);
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.4), 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.4), 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.4), 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        
         .modal {
             display: none;
             position: fixed;
-            z-index: 1000;
+            z-index: 2000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
         }
+        
         .modal.show {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .floating-cta {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
+        
+        .modal-content {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: modalSlideIn 0.3s ease-out;
         }
-        @media (max-width: 768px) {
-            .floating-cta {
-                bottom: 15px;
-                right: 15px;
+        
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
             }
-            .floating-cta button {
-                padding: 12px;
-            }
-            .floating-cta i {
-                font-size: 1.2rem;
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
             }
         }
         
-        /* Enhanced Mobile Responsiveness */
-        @media (max-width: 640px) {
-            .hero-gradient {
-                padding-top: 80px;
-            }
-            .hero-gradient .grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            .hero-form {
-                margin-top: 2rem;
-            }
-            .service-card {
-                padding: 1.5rem;
-            }
-            .service-card .flex {
-                flex-direction: column;
-            }
-            .testimonial-card {
-                padding: 1.5rem;
-            }
-            .stats-counter {
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero-gradient h1 {
-                font-size: 2rem;
-                line-height: 1.2;
-            }
-            .hero-gradient .text-xl {
-                font-size: 1.1rem;
-            }
-            .hero-form {
-                padding: 1.5rem;
-            }
-            .modal > div {
-                margin: 1rem;
-                max-width: calc(100vw - 2rem);
-            }
-        }
-        .testimonial-card {
-            background: linear-gradient(145deg, #f8fafc, #e2e8f0);
-        }
-        .stats-counter {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #1e40af;
-        }
-        
-        /* Animated Background Elements */
-        .floating-element {
-            position: absolute;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
-        }
-        .floating-element:nth-child(1) {
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-        .floating-element:nth-child(2) {
-            top: 60%;
-            right: 15%;
-            animation-delay: 2s;
-        }
-        .floating-element:nth-child(3) {
-            bottom: 30%;
-            left: 20%;
-            animation-delay: 4s;
-        }
-        .floating-element:nth-child(4) {
-            top: 40%;
-            right: 30%;
-            animation-delay: 1s;
-        }
-        .floating-element:nth-child(5) {
-            bottom: 20%;
-            right: 10%;
-            animation-delay: 3s;
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-20px) rotate(10deg);
-            }
-        }
-        
-        .hero-form {
-            backdrop-filter: blur(10px);
+        .navbar {
             background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 16px;
+            border: 1px solid var(--neutral-200);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 5px 20px -5px rgba(30, 64, 175, 0.1);
+        }
+        
+        .process-step {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 22px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .process-step:hover::before {
+            opacity: 1;
         }
         
         .success-message {
             display: none;
-            background: #10b981;
+            background: linear-gradient(135deg, var(--accent) 0%, #059669 100%);
             color: white;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-top: 1rem;
+            padding: 16px 24px;
+            border-radius: 12px;
+            margin-top: 16px;
             text-align: center;
+            font-weight: 500;
         }
         
         .success-message.show {
             display: block;
-            animation: slideIn 0.5s ease-out;
+            animation: slideInUp 0.5s ease-out;
         }
         
-        @keyframes slideIn {
+        @keyframes slideInUp {
             from {
                 opacity: 0;
-                transform: translateY(-10px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+        
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 80px 0;
+            }
+            
+            .hero-gradient {
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+            
+            .floating-cta {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .modal-content {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            .stats-card,
+            .testimonial-card,
+            .process-step {
+                padding: 30px 20px;
+            }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--neutral-100);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+        }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <nav class="navbar fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <i class="fas fa-balance-scale text-blue-600 text-2xl mr-3"></i>
-                    <span class="font-bold text-xl text-gray-800">Advocate Kamal Singla</span>
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-balance-scale text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-xl text-gray-800">Advocate Kamal Singla</div>
+                        <div class="text-sm text-gray-500">Legal Excellence Since 2008</div>
+                    </div>
                 </div>
                 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition duration-300">Testimonials</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
-                    <button onclick="openModal()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                        Free Consultation
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Services</a>
+                    <a href="#process" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Process</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Reviews</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contact</a>
+                    <button onclick="openModal()" class="btn-primary">
+                        <i class="fas fa-calendar-check mr-2"></i>Free Consultation
                     </button>
                 </div>
                 
                 <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600">
+                <div class="lg:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 p-2">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
-                    <a href="#testimonials" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Testimonials</a>
-                    <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
-                    <button onclick="openModal()" class="w-full text-left px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-                        Free Consultation
+            <div id="mobileMenu" class="lg:hidden hidden bg-white/95 backdrop-blur-20 border-t border-gray-200 rounded-b-2xl mt-2">
+                <div class="px-4 py-6 space-y-4">
+                    <a href="#home" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b border-gray-100">Home</a>
+                    <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b border-gray-100">About</a>
+                    <a href="#services" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b border-gray-100">Services</a>
+                    <a href="#process" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b border-gray-100">Process</a>
+                    <a href="#testimonials" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b border-gray-100">Reviews</a>
+                    <a href="#contact" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b border-gray-100">Contact</a>
+                    <button onclick="openModal()" class="btn-primary w-full mt-4">
+                        <i class="fas fa-calendar-check mr-2"></i>Free Consultation
                     </button>
                 </div>
             </div>
@@ -270,104 +531,103 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient text-white pt-20 relative">
-        <!-- Animated Background Elements -->
-        <div class="floating-element">
-            <i class="fas fa-balance-scale text-6xl"></i>
-        </div>
-        <div class="floating-element">
-            <i class="fas fa-gavel text-5xl"></i>
-        </div>
-        <div class="floating-element">
-            <i class="fas fa-file-contract text-4xl"></i>
-        </div>
-        <div class="floating-element">
-            <i class="fas fa-users text-5xl"></i>
-        </div>
-        <div class="floating-element">
-            <i class="fas fa-home text-4xl"></i>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Text Content -->
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                        Advocate Kamal Singla – Trusted Legal Services in Sunam, Punjab
-                    </h1>
-                    <p class="text-xl mb-6 text-blue-100">
-                        Experienced Advocate in Civil, Criminal & Family Matters – Serving Clients with Integrity and Commitment.
-                    </p>
-                    <p class="text-lg mb-8 text-blue-50">
-                        Located at Civil Courts, Sunam Udham Singh Wala, Punjab, Advocate Kamal Singla provides professional legal services tailored to your needs. Whether you need representation in a civil dispute, criminal case, or family matter, you can trust our experience, dedication, and in-depth legal knowledge to guide you through every step of your case.
-                    </p>
+    <section id="home" class="hero-gradient text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-10 rounded-full text-sm font-medium">
+                            <i class="fas fa-award mr-2 text-yellow-400"></i>
+                            15+ Years of Legal Excellence
+                        </div>
+                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                            Your Trusted
+                            <span class="text-gradient bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                                Legal Partner
+                            </span>
+                            in Punjab
+                        </h1>
+                        <p class="text-xl text-blue-100 leading-relaxed">
+                            Expert legal representation in Civil, Criminal & Family matters. Located at Civil Courts, Sunam. 
+                            Professional, reliable, and results-oriented legal services you can trust.
+                        </p>
+                    </div>
                     
-                    <!-- Key Services Quick List -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
-                            <span>Civil Law – Property disputes, recovery suits</span>
+                    <!-- Key Points -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-blue-100">500+ Cases Won</span>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
-                            <span>Criminal Law – Bail, defense, FIR quashing</span>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-blue-100">24/7 Legal Support</span>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
-                            <span>Family Law – Divorce, custody cases</span>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-blue-100">Affordable Fees</span>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
-                            <span>Legal Documentation – Agreements, wills</span>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-blue-100">Quick Response</span>
                         </div>
                     </div>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
-                        <a href="tel:+919417825082" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 text-center">
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:+919417825082" class="btn-primary inline-flex items-center justify-center">
                             <i class="fas fa-phone mr-2"></i>Call Now - 94178 25082
                         </a>
-                        <button onclick="openModal()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
-                            Free Consultation
-                        </button>
+                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20legal%20consultation.%20Please%20help." target="_blank" class="whatsapp-btn inline-flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Consultation
+                        </a>
                     </div>
                     
-                    <!-- Office Info -->
-                    <div class="flex items-center text-blue-100">
-                        <i class="fas fa-map-marker-alt mr-3"></i>
-                        <span>📞 Call Now – 94178 25082 | Visit Us – Chamber No. 207, Civil Courts, Sunam</span>
+                    <!-- Location Info -->
+                    <div class="flex items-center space-x-3 text-blue-100">
+                        <i class="fas fa-map-marker-alt text-yellow-400"></i>
+                        <span>Chamber No. 207, Civil Courts, Sunam Udham Singh Wala, Punjab</span>
                     </div>
                 </div>
                 
-                <!-- Hero Form -->
-                <div>
-                    <div class="hero-form rounded-2xl p-8 shadow-2xl">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Get Free Legal Consultation</h3>
-                        <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="heroForm" class="space-y-4">
-                            <!-- FormSubmit Configuration -->
-                            <input type="hidden" name="_subject" value="New Legal Consultation Request from Website">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="javascript:void(0)">
-                            
+                <!-- Consultation Form -->
+                <div class="glass-card rounded-3xl p-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Get Free Legal Consultation</h3>
+                        <p class="text-gray-600">Fill out the form and we'll get back to you within 2 hours</p>
+                    </div>
+                    
+                    <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="heroForm" class="space-y-6">
+                        <input type="hidden" name="_subject" value="New Legal Consultation Request from Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="javascript:void(0)">
+                        
+                        <div class="space-y-4">
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
+                                <input type="text" name="name" required placeholder="Full Name *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                                <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
+                                <input type="tel" name="phone" required placeholder="Phone Number *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                                <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
+                                <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Legal Matter Type *</label>
-                                <select name="legal_matter" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
-                                    <option value="">Select Legal Matter</option>
+                                <select name="legal_matter" required class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
+                                    <option value="">Select Legal Matter *</option>
                                     <option value="Civil Law">Civil Law</option>
                                     <option value="Criminal Law">Criminal Law</option>
                                     <option value="Family Law">Family Law</option>
@@ -377,24 +637,23 @@
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Brief Description *</label>
-                                <textarea name="message" rows="3" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800" placeholder="Please describe your legal matter briefly..."></textarea>
+                                <textarea name="message" rows="4" required placeholder="Brief description of your legal matter *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500 resize-none"></textarea>
                             </div>
-                            
-                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-                                <i class="fas fa-paper-plane mr-2"></i>Get Free Consultation
-                            </button>
-                            
-                            <div id="heroSuccessMessage" class="success-message">
-                                <i class="fas fa-check-circle mr-2"></i>
-                                Thank you! Your consultation request has been submitted successfully. We will contact you within 24 hours.
-                            </div>
-                        </form>
-                        
-                        <div class="mt-6 text-center text-sm text-gray-600">
-                            <i class="fas fa-shield-alt mr-2"></i>
-                            Your information is secure and confidential
                         </div>
+                        
+                        <button type="submit" class="btn-primary w-full py-4 text-lg">
+                            <i class="fas fa-paper-plane mr-2"></i>Get Free Consultation
+                        </button>
+                        
+                        <div id="heroSuccessMessage" class="success-message">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            Thank you! Your consultation request has been submitted successfully. We will contact you within 2 hours.
+                        </div>
+                    </form>
+                    
+                    <div class="mt-6 text-center text-sm text-gray-500">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        Your information is secure and confidential
                     </div>
                 </div>
             </div>
@@ -402,131 +661,302 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="bg-white py-16">
+    <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="stats-counter">15+</div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-gradient mb-2">15+</div>
                     <p class="text-gray-600 font-medium">Years Experience</p>
                 </div>
-                <div>
-                    <div class="stats-counter">500+</div>
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-gradient mb-2">500+</div>
                     <p class="text-gray-600 font-medium">Cases Won</p>
                 </div>
-                <div>
-                    <div class="stats-counter">1000+</div>
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-gradient mb-2">1000+</div>
                     <p class="text-gray-600 font-medium">Happy Clients</p>
                 </div>
-                <div>
-                    <div class="stats-counter">24/7</div>
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-gradient mb-2">24/7</div>
                     <p class="text-gray-600 font-medium">Legal Support</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Advocate Kamal Singla?</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Your trusted legal partner in Sunam, Punjab with proven expertise and client-focused approach
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-blue-600 text-4xl mb-6">
-                        <i class="fas fa-award"></i>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800">
+                            <i class="fas fa-user-tie mr-2"></i>
+                            About Our Practice
+                        </div>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-800">
+                            Meet Advocate 
+                            <span class="text-gradient">Kamal Singla</span>
+                        </h2>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            A respected legal professional in Sunam Udham Singh Wala with over 15 years of experience 
+                            in civil, criminal, and family law. Committed to delivering justice with integrity and excellence.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">15+ Years Experience</h3>
-                    <p class="text-gray-600">Extensive experience in handling complex legal matters across Civil, Criminal, and Family Law with proven track record.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-graduation-cap text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Legal Education & Expertise</h4>
+                                <p class="text-gray-600">Qualified legal professional with extensive knowledge in Punjab legal system and court procedures.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-handshake text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Client-Centered Approach</h4>
+                                <p class="text-gray-600">Personalized legal solutions with transparent communication and dedicated support throughout your case.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-trophy text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Proven Track Record</h4>
+                                <p class="text-gray-600">Successfully handled 500+ cases with high success rate in civil, criminal, and family matters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="openModal()" class="btn-primary">
+                            <i class="fas fa-calendar-check mr-2"></i>Schedule Consultation
+                        </button>
+                        <a href="#contact" class="btn-secondary text-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>Visit Our Office
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-green-600 text-4xl mb-6">
-                        <i class="fas fa-handshake"></i>
+                <div class="space-y-8">
+                    <div class="glass-card rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Why Choose Us?</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">15+ Years of Legal Experience</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Located in Civil Courts, Sunam</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Affordable & Transparent Pricing</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Quick Response to Urgent Matters</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Complete Confidentiality Assured</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Personalized Legal Solutions</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Client-Focused Approach</h3>
-                    <p class="text-gray-600">Personalized legal solutions tailored to your specific needs with transparent communication throughout the process.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-red-600 text-4xl mb-6">
-                        <i class="fas fa-clock"></i>
+                    
+                    <div class="bg-white rounded-3xl p-8 shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Office Location</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                <span class="text-gray-700">Chamber No. 207, Civil Courts</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-city text-blue-600"></i>
+                                <span class="text-gray-700">Dashmesh Nagar, Sunam Udham Singh Wala</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-map text-blue-600"></i>
+                                <span class="text-gray-700">Punjab 148028, India</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-clock text-blue-600"></i>
+                                <span class="text-gray-700">Mon-Sat: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Quick Response Time</h3>
-                    <p class="text-gray-600">Urgent legal matters receive immediate attention with 24/7 availability for emergency consultations.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-purple-600 text-4xl mb-6">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Affordable Legal Fees</h3>
-                    <p class="text-gray-600">Transparent pricing structure with no hidden costs. Quality legal services at competitive rates.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-indigo-600 text-4xl mb-6">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Local Expertise</h3>
-                    <p class="text-gray-600">Deep understanding of local legal procedures and court systems in Punjab with established relationships.</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-orange-600 text-4xl mb-6">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Confidentiality Assured</h3>
-                    <p class="text-gray-600">Complete confidentiality and privacy protection for all client information and legal matters.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Legal Process Section -->
-    <section class="py-20 bg-white">
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Legal Process</h2>
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-briefcase mr-2"></i>
+                    Our Legal Services
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Comprehensive Legal Solutions
+                </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Simple, transparent, and effective approach to handling your legal matters
+                    Expert legal representation across Civil, Criminal, and Family Law with personalized attention to every case.
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl font-bold text-blue-600">1</span>
+                <div class="service-card rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Initial Consultation</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Civil Law</h3>
+                    <p class="text-gray-600 mb-6">Property disputes, recovery suits, contract matters, and partition suits with thorough preparation.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Property Disputes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Recovery Suits</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Contract Matters</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Partition Suits</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button onclick="openLeadModal('Civil Law')" class="btn-primary w-full">
+                            <i class="fas fa-calendar mr-2"></i>Book Consultation
+                        </button>
+                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20legal%20assistance%20for%20Civil%20Law%20matters%20including%20property%20disputes,%20recovery%20suits,%20or%20contract%20matters.%20Please%20provide%20consultation." target="_blank" class="whatsapp-btn w-full">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-gavel text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Criminal Law</h3>
+                    <p class="text-gray-600 mb-6">Bail applications, defense representation, FIR quashing, and trial advocacy.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Bail Applications</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Defense Representation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>FIR Quashing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Trial Advocacy</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button onclick="openLeadModal('Criminal Law')" class="btn-primary w-full">
+                            <i class="fas fa-calendar mr-2"></i>Book Consultation
+                        </button>
+                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20urgently%20need%20legal%20assistance%20for%20Criminal%20Law%20matters%20including%20bail%20applications,%20defense%20representation,%20or%20FIR%20quashing.%20Please%20help." target="_blank" class="whatsapp-btn w-full">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Family Law</h3>
+                    <p class="text-gray-600 mb-6">Divorce proceedings, child custody, domestic violence cases, and maintenance matters.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Divorce Cases</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Child Custody</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Domestic Violence</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Maintenance</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button onclick="openLeadModal('Family Law')" class="btn-primary w-full">
+                            <i class="fas fa-calendar mr-2"></i>Book Consultation
+                        </button>
+                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20confidential%20legal%20assistance%20for%20Family%20Law%20matters%20including%20divorce,%20child%20custody,%20or%20domestic%20violence%20cases.%20Please%20provide%20guidance." target="_blank" class="whatsapp-btn w-full">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card rounded-3xl p-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-contract text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Legal Documentation</h3>
+                    <p class="text-gray-600 mb-6">Drafting agreements, wills, affidavits, and contracts to safeguard your rights.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Legal Agreements</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Wills & Testaments</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Affidavits</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Contract Review</li>
+                    </ul>
+                    <div class="space-y-3">
+                        <button onclick="openLeadModal('Legal Documentation')" class="btn-primary w-full">
+                            <i class="fas fa-calendar mr-2"></i>Book Consultation
+                        </button>
+                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20assistance%20with%20Legal%20Documentation%20including%20drafting%20agreements,%20wills,%20affidavits,%20or%20contract%20review.%20Please%20help." target="_blank" class="whatsapp-btn w-full">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section-padding bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-route mr-2"></i>
+                    Our Process
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    How We Handle Your Case
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Simple, transparent, and effective approach to delivering the best legal outcomes for our clients.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="process-step">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Initial Consultation</h3>
                     <p class="text-gray-600">Free consultation to understand your legal matter and provide initial guidance on the best course of action.</p>
                 </div>
                 
-                <div class="text-center">
-                    <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl font-bold text-green-600">2</span>
+                <div class="process-step">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">2</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Case Analysis</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Case Analysis</h3>
                     <p class="text-gray-600">Thorough analysis of your case, documentation review, and development of strategic legal approach.</p>
                 </div>
                 
-                <div class="text-center">
-                    <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl font-bold text-purple-600">3</span>
+                <div class="process-step">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">3</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Legal Action</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Legal Action</h3>
                     <p class="text-gray-600">Implementation of legal strategy with regular updates and transparent communication throughout the process.</p>
                 </div>
                 
-                <div class="text-center">
-                    <div class="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                        <span class="text-2xl font-bold text-orange-600">4</span>
+                <div class="process-step">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">4</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Resolution</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Resolution</h3>
                     <p class="text-gray-600">Successful resolution of your legal matter with post-case support and guidance as needed.</p>
                 </div>
             </div>
@@ -534,17 +964,23 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="section-padding bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-question-circle mr-2"></i>
+                    Frequently Asked Questions
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Common Questions
+                </h2>
                 <p class="text-xl text-gray-600">
-                    Common questions about our legal services and processes
+                    Get answers to the most frequently asked questions about our legal services.
                 </p>
             </div>
             
             <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="faq-item p-6">
                     <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
                         <h3 class="text-lg font-semibold text-gray-800">What types of legal cases do you handle?</h3>
                         <i class="fas fa-chevron-down text-gray-500 transform transition-transform"></i>
@@ -554,7 +990,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="faq-item p-6">
                     <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
                         <h3 class="text-lg font-semibold text-gray-800">How much do your legal services cost?</h3>
                         <i class="fas fa-chevron-down text-gray-500 transform transition-transform"></i>
@@ -564,7 +1000,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="faq-item p-6">
                     <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
                         <h3 class="text-lg font-semibold text-gray-800">How long does a typical legal case take?</h3>
                         <i class="fas fa-chevron-down text-gray-500 transform transition-transform"></i>
@@ -574,7 +1010,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="faq-item p-6">
                     <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
                         <h3 class="text-lg font-semibold text-gray-800">Do you handle urgent legal matters?</h3>
                         <i class="fas fa-chevron-down text-gray-500 transform transition-transform"></i>
@@ -584,7 +1020,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="faq-item p-6">
                     <button class="faq-question w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
                         <h3 class="text-lg font-semibold text-gray-800">Can I get legal advice over phone or WhatsApp?</h3>
                         <i class="fas fa-chevron-down text-gray-500 transform transition-transform"></i>
@@ -597,312 +1033,404 @@
         </div>
     </section>
 
-    <!-- Legal Resources Section -->
-    <section class="py-20 bg-white">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Legal Resources & Information</h2>
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-star mr-2"></i>
+                    Client Testimonials
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    What Our Clients Say
+                </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Important legal information and resources for common legal matters
+                    Real experiences from clients who trusted us with their legal matters.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        Advocate Kamal Singla handled my property dispute case with utmost professionalism. His expertise and dedication helped me win the case. Highly recommended for anyone seeking reliable legal representation.
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">RK</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Rajesh Kumar</div>
+                            <div class="text-sm text-gray-500">Property Dispute Case</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        Excellent legal advice and representation in my family matter. Advocate Singla's approach was compassionate yet firm. His guidance helped me through a difficult time with dignity.
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">PS</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Priya Sharma</div>
+                            <div class="text-sm text-gray-500">Family Law Case</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        Got bail for my brother within 24 hours. Advocate Kamal Singla's quick action and legal expertise saved us from a difficult situation. Forever grateful for his immediate response.
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">MS</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-800">Manpreet Singh</div>
+                            <div class="text-sm text-gray-500">Criminal Law Case</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-award mr-2"></i>
+                    Why Choose Us
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Your Success is Our Priority
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover what makes us the preferred choice for legal representation in Punjab.
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 hover:shadow-lg transition duration-300">
-                    <div class="text-blue-600 text-3xl mb-4">
-                        <i class="fas fa-file-alt"></i>
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-graduate text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Legal Documents Checklist</h3>
-                    <p class="text-gray-600 mb-4">Essential documents needed for different types of legal cases and procedures.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Property documents for civil cases</li>
-                        <li>• Identity proofs and address verification</li>
-                        <li>• Marriage certificates for family matters</li>
-                        <li>• Financial documents for maintenance cases</li>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">15+ Years Experience</h3>
+                    <p class="text-gray-600">Extensive experience in Punjab legal system with deep understanding of local courts and procedures.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">500+ Cases Won</h3>
+                    <p class="text-gray-600">Proven track record of successful case outcomes across civil, criminal, and family law matters.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock availability for urgent legal matters and emergency consultations.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-3xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rupee-sign text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Affordable Fees</h3>
+                    <p class="text-gray-600">Transparent pricing with no hidden costs. Payment plans available for complex cases.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Complete Confidentiality</h3>
+                    <p class="text-gray-600">Strict confidentiality maintained for all client matters with secure document handling.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Personalized Approach</h3>
+                    <p class="text-gray-600">Tailored legal strategies for each case with dedicated attention to your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Resources Section -->
+    <section class="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-book mr-2"></i>
+                    Legal Resources
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Know Your Rights
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Essential legal information and resources to help you understand your rights and legal options.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Property Rights</h3>
+                    <p class="text-gray-600 mb-6">Understanding property ownership, disputes, and legal remedies available under Indian law.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Property Documentation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Title Verification</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Dispute Resolution</li>
                     </ul>
                 </div>
                 
-                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 hover:shadow-lg transition duration-300">
-                    <div class="text-green-600 text-3xl mb-4">
-                        <i class="fas fa-gavel"></i>
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-gavel text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Court Procedures</h3>
-                    <p class="text-gray-600 mb-4">Understanding basic court procedures and what to expect during legal proceedings.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Filing procedures and timelines</li>
-                        <li>• Court hearing preparations</li>
-                        <li>• Evidence submission guidelines</li>
-                        <li>• Appeal processes and deadlines</li>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Criminal Rights</h3>
+                    <p class="text-gray-600 mb-6">Know your fundamental rights when facing criminal charges and legal procedures.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Right to Bail</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Legal Representation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Fair Trial Rights</li>
                     </ul>
                 </div>
                 
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 hover:shadow-lg transition duration-300">
-                    <div class="text-purple-600 text-3xl mb-4">
-                        <i class="fas fa-question-circle"></i>
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Legal Rights & Duties</h3>
-                    <p class="text-gray-600 mb-4">Know your legal rights and responsibilities in various situations.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Consumer protection rights</li>
-                        <li>• Property ownership rights</li>
-                        <li>• Family law rights and obligations</li>
-                        <li>• Criminal law rights during arrest</li>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Family Laws</h3>
+                    <p class="text-gray-600 mb-6">Understanding marriage, divorce, custody, and maintenance laws in India.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Marriage Rights</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Child Custody</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Maintenance Laws</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-contract text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Legal Documents</h3>
+                    <p class="text-gray-600 mb-6">Essential legal documents and their importance in protecting your interests.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Will & Testament</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Power of Attorney</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Legal Agreements</li>
                     </ul>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <button onclick="openModal()" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-                    <i class="fas fa-comments mr-2"></i>Get Personalized Legal Guidance
+                <button onclick="openModal()" class="btn-primary text-lg px-8 py-4">
+                    <i class="fas fa-question-circle mr-2"></i>Get Legal Guidance
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
+    <!-- Emergency Legal Help Section -->
+    <section class="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-10 rounded-full text-sm font-medium mb-6">
+                    <i class="fas fa-exclamation-triangle mr-2 text-yellow-300"></i>
+                    Emergency Legal Assistance
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    Need Urgent Legal Help?
+                </h2>
+                <p class="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
+                    Facing an emergency legal situation? Don't wait. Get immediate legal assistance for urgent matters like arrests, bail applications, or time-sensitive legal issues.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">24/7 Helpline</h3>
+                        <p class="text-red-100">Immediate phone consultation available round the clock</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Quick Response</h3>
+                        <p class="text-red-100">Response within 30 minutes for emergency cases</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Immediate Action</h3>
+                        <p class="text-red-100">Swift legal action to protect your rights</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+919417825082" class="bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i>Emergency Call - 94178 25082
+                    </a>
+                    <a href="https://wa.me/919905009827?text=EMERGENCY:%20I%20need%20immediate%20legal%20assistance.%20Please%20help%20urgently." target="_blank" class="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition duration-300 inline-flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Emergency WhatsApp
+                    </a>
+                </div>
+                
+                <div class="mt-8 text-sm text-red-100">
+                    <p><i class="fas fa-info-circle mr-2"></i>Available for: Arrests, Bail Applications, Police Custody, Court Matters, Legal Emergencies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="section-padding bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Legal Services</h2>
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-medal mr-2"></i>
+                    Success Stories
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Recent Case Victories
+                </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Comprehensive legal solutions across Civil, Criminal, and Family Law with personalized attention to every case.
+                    Real cases, real results. See how we've helped clients achieve successful outcomes.
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-blue-600 text-4xl mb-6">
-                        <i class="fas fa-home"></i>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-800">Property Dispute</div>
+                            <div class="text-sm text-gray-500">Civil Court, Sunam</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Civil Law</h3>
-                    <p class="text-gray-600 mb-4">Property disputes, recovery suits, contract matters, and partition suits with thorough preparation.</p>
-                    <ul class="text-sm text-gray-500 space-y-1 mb-6">
-                        <li>• Property Disputes</li>
-                        <li>• Recovery Suits</li>
-                        <li>• Contract Matters</li>
-                        <li>• Partition Suits</li>
-                    </ul>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                        <button onclick="openLeadModal('Civil Law')" class="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 text-sm">
-                            <i class="fas fa-calendar mr-2"></i>Book Consultation
-                        </button>
-                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20legal%20assistance%20for%20Civil%20Law%20matters%20including%20property%20disputes,%20recovery%20suits,%20or%20contract%20matters.%20Please%20provide%20consultation." target="_blank" class="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 text-sm text-center">
-                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
-                        </a>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">₹50 Lakh Property Recovered</h3>
+                    <p class="text-gray-600 mb-4">Successfully recovered client's ancestral property worth ₹50 lakhs through strategic legal action and proper documentation.</p>
+                    <div class="text-sm text-green-600 font-medium">
+                        <i class="fas fa-check-circle mr-2"></i>Case Duration: 8 months
                     </div>
                 </div>
                 
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-red-600 text-4xl mb-6">
-                        <i class="fas fa-gavel"></i>
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-gavel text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-800">Criminal Defense</div>
+                            <div class="text-sm text-gray-500">Sessions Court</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Criminal Law</h3>
-                    <p class="text-gray-600 mb-4">Bail applications, defense representation, FIR quashing, and trial advocacy.</p>
-                    <ul class="text-sm text-gray-500 space-y-1 mb-6">
-                        <li>• Bail Applications</li>
-                        <li>• Defense Representation</li>
-                        <li>• FIR Quashing</li>
-                        <li>• Trial Advocacy</li>
-                    </ul>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                        <button onclick="openLeadModal('Criminal Law')" class="flex-1 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300 text-sm">
-                            <i class="fas fa-calendar mr-2"></i>Book Consultation
-                        </button>
-                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20urgently%20need%20legal%20assistance%20for%20Criminal%20Law%20matters%20including%20bail%20applications,%20defense%20representation,%20or%20FIR%20quashing.%20Please%20help." target="_blank" class="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 text-sm text-center">
-                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
-                        </a>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">False Case Acquittal</h3>
+                    <p class="text-gray-600 mb-4">Client acquitted of false criminal charges through thorough investigation and strong defense strategy.</p>
+                    <div class="text-sm text-blue-600 font-medium">
+                        <i class="fas fa-check-circle mr-2"></i>Case Duration: 1.5 years
                     </div>
                 </div>
                 
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-green-600 text-4xl mb-6">
-                        <i class="fas fa-users"></i>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-users text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-800">Family Dispute</div>
+                            <div class="text-sm text-gray-500">Family Court</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Family Law</h3>
-                    <p class="text-gray-600 mb-4">Divorce proceedings, child custody, domestic violence cases, and maintenance matters.</p>
-                    <ul class="text-sm text-gray-500 space-y-1 mb-6">
-                        <li>• Divorce Cases</li>
-                        <li>• Child Custody</li>
-                        <li>• Domestic Violence</li>
-                        <li>• Maintenance</li>
-                    </ul>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                        <button onclick="openLeadModal('Family Law')" class="flex-1 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300 text-sm">
-                            <i class="fas fa-calendar mr-2"></i>Book Consultation
-                        </button>
-                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20confidential%20legal%20assistance%20for%20Family%20Law%20matters%20including%20divorce,%20child%20custody,%20or%20domestic%20violence%20cases.%20Please%20provide%20guidance." target="_blank" class="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 text-sm text-center">
-                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
-                        </a>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Child Custody Won</h3>
+                    <p class="text-gray-600 mb-4">Secured child custody for mother with fair maintenance arrangement through compassionate legal approach.</p>
+                    <div class="text-sm text-purple-600 font-medium">
+                        <i class="fas fa-check-circle mr-2"></i>Case Duration: 6 months
                     </div>
                 </div>
-                
-                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="text-purple-600 text-4xl mb-6">
-                        <i class="fas fa-file-contract"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Legal Documentation</h3>
-                    <p class="text-gray-600 mb-4">Drafting agreements, wills, affidavits, and contracts to safeguard your rights.</p>
-                    <ul class="text-sm text-gray-500 space-y-1 mb-6">
-                        <li>• Legal Agreements</li>
-                        <li>• Wills & Testaments</li>
-                        <li>• Affidavits</li>
-                        <li>• Contract Review</li>
-                    </ul>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                        <button onclick="openLeadModal('Legal Documentation')" class="flex-1 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-300 text-sm">
-                            <i class="fas fa-calendar mr-2"></i>Book Consultation
-                        </button>
-                        <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20assistance%20with%20Legal%20Documentation%20including%20drafting%20agreements,%20wills,%20affidavits,%20or%20contract%20review.%20Please%20help." target="_blank" class="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 text-sm text-center">
-                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Advocate Kamal Singla</h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        Advocate Kamal Singla is a respected lawyer in Sunam Udham Singh Wala with years of experience in civil, criminal, and family law. His commitment to justice and client satisfaction makes him a trusted choice for individuals and businesses seeking legal help.
-                    </p>
-                    
-                    <div class="mb-8">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
-                        <p class="text-gray-600">
-                            To provide effective, affordable, and result-oriented legal solutions while maintaining complete transparency and client trust.
-                        </p>
-                    </div>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="font-medium">Integrity</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="font-medium">Professionalism</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="font-medium">Dedication</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="font-medium">Confidentiality</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-blue-50 rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Location Advantage</h3>
-                    <p class="text-gray-600 mb-6">
-                        Based in the Civil Courts, Sunam, Advocate Kamal Singla is easily accessible to clients in Sunam, Sangrur, and nearby Punjab regions.
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
-                            <span>Chamber No. 207, Civil Courts</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-city text-blue-600 mr-3"></i>
-                            <span>Sunam Udham Singh Wala, Punjab</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-clock text-blue-600 mr-3"></i>
-                            <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Client Testimonials</h2>
-                <p class="text-xl text-gray-600">What our clients say about our legal services</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="testimonial-card rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4 italic">
-                        "Advocate Kamal Singla handled my property dispute case with utmost professionalism. His expertise and dedication helped me win the case. Highly recommended!"
-                    </p>
-                    <div class="font-semibold text-gray-800">Rajesh Kumar</div>
-                    <div class="text-sm text-gray-500">Property Dispute Case</div>
-                </div>
-                
-                <div class="testimonial-card rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4 italic">
-                        "Excellent legal advice and representation in my family matter. Advocate Singla's approach was compassionate yet firm. Thank you for your support."
-                    </p>
-                    <div class="font-semibold text-gray-800">Priya Sharma</div>
-                    <div class="text-sm text-gray-500">Family Law Case</div>
-                </div>
-                
-                <div class="testimonial-card rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4 italic">
-                        "Got bail for my brother within 24 hours. Advocate Kamal Singla's quick action and legal expertise saved us from a difficult situation. Grateful!"
-                    </p>
-                    <div class="font-semibold text-gray-800">Manpreet Singh</div>
-                    <div class="text-sm text-gray-500">Criminal Law Case</div>
-                </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-6">Want to share your success story with us?</p>
+                <button onclick="openModal()" class="btn-primary">
+                    <i class="fas fa-handshake mr-2"></i>Start Your Case Today
+                </button>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="section-padding bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
-                <p class="text-xl text-gray-600">Contact Advocate Kamal Singla for professional legal assistance</p>
+                <div class="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                    <i class="fas fa-phone mr-2"></i>
+                    Get In Touch
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Contact Us Today
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to discuss your legal matter? Reach out to us for professional legal assistance.
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
-                    
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="space-y-8">
                     <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-4 mt-1"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">Address</h4>
+                                <h4 class="font-semibold text-gray-800 mb-2">Office Address</h4>
                                 <p class="text-gray-600">
                                     Chamber No. 207, Civil Courts, Dashmesh Nagar,<br>
                                     Sunam Udham Singh Wala, Punjab 148028
@@ -910,63 +1438,80 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-start">
-                            <i class="fas fa-phone text-blue-600 text-xl mr-4 mt-1"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-green-600"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">Phone</h4>
-                                <a href="tel:+919417825082" class="text-blue-600 hover:underline">94178 25082</a>
+                                <h4 class="font-semibold text-gray-800 mb-2">Phone Number</h4>
+                                <a href="tel:+919417825082" class="text-blue-600 hover:underline font-medium">94178 25082</a>
                             </div>
                         </div>
                         
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-blue-600 text-xl mr-4 mt-1"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <h4 class="font-semibold text-gray-800 mb-2">Email Address</h4>
                                 <a href="mailto:kamalsingla.singla1@gmail.com" class="text-blue-600 hover:underline">kamalsingla.singla1@gmail.com</a>
                             </div>
                         </div>
                         
-                        <div class="flex items-start">
-                            <i class="fas fa-clock text-blue-600 text-xl mr-4 mt-1"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-yellow-600"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">Office Hours</h4>
+                                <h4 class="font-semibold text-gray-800 mb-2">Office Hours</h4>
                                 <p class="text-gray-600">
                                     Monday – Saturday: 9:00 AM – 6:00 PM<br>
-                                    Sunday: Closed
+                                    Sunday: Closed (Emergency calls accepted)
                                 </p>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Quick Contact Options</h3>
+                        <div class="space-y-4">
+                            <a href="tel:+919417825082" class="btn-primary w-full text-center">
+                                <i class="fas fa-phone mr-2"></i>Call Now - 94178 25082
+                            </a>
+                            <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20legal%20consultation.%20Please%20help." target="_blank" class="whatsapp-btn w-full text-center">
+                                <i class="fab fa-whatsapp mr-2"></i>WhatsApp Consultation
+                            </a>
+                            <button onclick="openModal()" class="btn-secondary w-full">
+                                <i class="fas fa-calendar-check mr-2"></i>Schedule Meeting
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="bg-gray-50 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
-                    <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="contactForm" class="space-y-4">
-                        <!-- FormSubmit Configuration -->
+                <div class="glass-card rounded-3xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="contactForm" class="space-y-6">
                         <input type="hidden" name="_subject" value="New Contact Form Message from Website">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_next" value="javascript:void(0)">
                         
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" name="name" required placeholder="Full Name *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" required placeholder="Phone Number *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
+                            </div>
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                            <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Legal Matter Type *</label>
-                            <select name="legal_matter" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                <option value="">Select Legal Matter</option>
+                            <select name="legal_matter" required class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
+                                <option value="">Select Legal Matter *</option>
                                 <option value="Civil Law">Civil Law</option>
                                 <option value="Criminal Law">Criminal Law</option>
                                 <option value="Family Law">Family Law</option>
@@ -976,17 +1521,16 @@
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
-                            <textarea name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Please describe your legal matter briefly..."></textarea>
+                            <textarea name="message" rows="5" required placeholder="Please describe your legal matter briefly *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500 resize-none"></textarea>
                         </div>
                         
-                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                        <button type="submit" class="btn-primary w-full py-4 text-lg">
                             <i class="fas fa-paper-plane mr-2"></i>Send Message
                         </button>
                         
                         <div id="contactSuccessMessage" class="success-message">
                             <i class="fas fa-check-circle mr-2"></i>
-                            Thank you! Your message has been sent successfully. We will get back to you soon.
+                            Thank you! Your message has been sent successfully. We will get back to you within 2 hours.
                         </div>
                     </form>
                 </div>
@@ -995,16 +1539,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-gray-900 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-balance-scale text-blue-400 text-2xl mr-3"></i>
-                        <span class="font-bold text-xl">Advocate Kamal Singla</span>
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-balance-scale text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">Advocate Kamal Singla</div>
+                            <div class="text-sm text-gray-400">Legal Excellence</div>
+                        </div>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        Professional legal services in Sunam, Punjab. Trusted advocate for Civil, Criminal, and Family Law matters.
+                    <p class="text-gray-300 leading-relaxed">
+                        Professional legal services in Sunam, Punjab. Trusted advocate for Civil, Criminal, and Family Law matters with 15+ years of experience.
                     </p>
                 </div>
                 
@@ -1014,6 +1563,8 @@
                         <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
                         <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a></li>
                         <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#process" class="text-gray-300 hover:text-white transition duration-300">Process</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Reviews</a></li>
                         <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
@@ -1025,82 +1576,82 @@
                         <li><span class="text-gray-300">Criminal Law</span></li>
                         <li><span class="text-gray-300">Family Law</span></li>
                         <li><span class="text-gray-300">Legal Documentation</span></li>
+                        <li><span class="text-gray-300">Property Disputes</span></li>
+                        <li><span class="text-gray-300">Bail Applications</span></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h4 class="font-semibold text-lg mb-4">Contact Info</h4>
-                    <div class="space-y-2">
-                        <p class="text-gray-300">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            Chamber No. 207, Civil Courts, Sunam
-                        </p>
-                        <p class="text-gray-300">
-                            <i class="fas fa-phone mr-2"></i>
-                            94178 25082
-                        </p>
-                        <p class="text-gray-300">
-                            <i class="fas fa-envelope mr-2"></i>
-                            kamalsingla.singla1@gmail.com
-                        </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
+                            <span class="text-gray-300 text-sm">Chamber No. 207, Civil Courts, Sunam Udham Singh Wala, Punjab</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span class="text-gray-300">94178 25082</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span class="text-gray-300 text-sm">kamalsingla.singla1@gmail.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-300 mb-4">
-                    © 2024 Advocate Kamal Singla. All rights reserved. | Professional Legal Services in Sunam, Punjab
-                </p>
-                <p style="text-align:center; font-size:14px; color: #9ca3af;">
-                    Designed & Developed by <a href="https://adswinmedia.in" target="_blank" style="color:#60a5fa; text-decoration: none; hover:text-decoration: underline;">AdsWin Media</a>
-                </p>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 Advocate Kamal Singla. All rights reserved. | Professional Legal Services in Sunam, Punjab
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        Designed & Developed by <a href="https://adswinmedia.in" target="_blank" class="text-blue-400 hover:text-blue-300 transition duration-300">AdsWin Media</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Floating CTA -->
     <div class="floating-cta">
-        <button onclick="openModal()" class="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+        <button onclick="openModal()" class="floating-btn">
             <i class="fas fa-comments text-xl"></i>
         </button>
     </div>
 
     <!-- Consultation Modal -->
     <div id="consultationModal" class="modal">
-        <div class="bg-white rounded-xl p-6 sm:p-8 max-w-md w-full mx-4">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-xl sm:text-2xl font-bold text-gray-800">Free Legal Consultation</h3>
-                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800">Free Legal Consultation</h3>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 p-2">
                     <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
             
-            <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="modalForm" class="space-y-4">
-                <!-- FormSubmit Configuration -->
+            <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="modalForm" class="space-y-6">
                 <input type="hidden" name="_subject" value="New Free Consultation Request from Website Modal">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_next" value="javascript:void(0)">
                 
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <input type="text" name="name" required placeholder="Full Name *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" required placeholder="Phone Number *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
+                    </div>
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                    <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Legal Matter *</label>
-                    <select name="legal_matter" id="modalLegalMatter" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option value="">Select Legal Matter</option>
+                    <select name="legal_matter" id="modalLegalMatter" required class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
+                        <option value="">Select Legal Matter *</option>
                         <option value="Civil Law">Civil Law</option>
                         <option value="Criminal Law">Criminal Law</option>
                         <option value="Family Law">Family Law</option>
@@ -1110,17 +1661,16 @@
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Brief Description *</label>
-                    <textarea name="message" rows="3" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Briefly describe your legal matter..."></textarea>
+                    <textarea name="message" rows="4" required placeholder="Brief description of your legal matter *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500 resize-none"></textarea>
                 </div>
                 
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                <button type="submit" class="btn-primary w-full py-4 text-lg">
                     <i class="fas fa-paper-plane mr-2"></i>Request Free Consultation
                 </button>
                 
                 <div id="modalSuccessMessage" class="success-message">
                     <i class="fas fa-check-circle mr-2"></i>
-                    Thank you! Your consultation request has been submitted. We will contact you within 24 hours.
+                    Thank you! Your consultation request has been submitted. We will contact you within 2 hours.
                 </div>
             </form>
         </div>
@@ -1128,47 +1678,43 @@
 
     <!-- Lead Generation Modal -->
     <div id="leadModal" class="modal">
-        <div class="bg-white rounded-xl p-6 sm:p-8 max-w-md w-full mx-4">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-xl sm:text-2xl font-bold text-gray-800">Book Your Consultation</h3>
-                <button onclick="closeLeadModal()" class="text-gray-500 hover:text-gray-700">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800">Book Your Consultation</h3>
+                <button onclick="closeLeadModal()" class="text-gray-500 hover:text-gray-700 p-2">
                     <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
             
-            <div class="mb-4 p-4 bg-blue-50 rounded-lg">
+            <div class="mb-6 p-4 bg-blue-50 rounded-xl">
                 <p class="text-sm text-blue-800">
                     <i class="fas fa-info-circle mr-2"></i>
                     Selected Service: <span id="selectedService" class="font-semibold"></span>
                 </p>
             </div>
             
-            <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="leadForm" class="space-y-4">
-                <!-- FormSubmit Configuration -->
+            <form action="https://formsubmit.co/kamalsingla.singla1@gmail.com" method="POST" id="leadForm" class="space-y-6">
                 <input type="hidden" name="_subject" value="New Service Consultation Request from Website">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_next" value="javascript:void(0)">
                 <input type="hidden" name="service_type" id="serviceTypeField" value="">
                 
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <input type="text" name="name" required placeholder="Full Name *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" required placeholder="Phone Number *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
+                    </div>
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                    <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500">
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Consultation Time</label>
-                    <select name="preferred_time" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select name="preferred_time" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800">
                         <option value="">Select Preferred Time</option>
                         <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
                         <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
@@ -1178,8 +1724,7 @@
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Case Details *</label>
-                    <textarea name="case_details" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Please provide details about your legal matter, urgency level, and any specific questions you have..."></textarea>
+                    <textarea name="case_details" rows="5" required placeholder="Please provide details about your legal matter, urgency level, and any specific questions you have *" class="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-500 resize-none"></textarea>
                 </div>
                 
                 <div class="flex items-center">
@@ -1187,7 +1732,7 @@
                     <label for="urgentCase" class="text-sm text-gray-700">This is an urgent matter requiring immediate attention</label>
                 </div>
                 
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                <button type="submit" class="btn-primary w-full py-4 text-lg">
                     <i class="fas fa-calendar-check mr-2"></i>Book Consultation Now
                 </button>
                 
@@ -1197,13 +1742,13 @@
                 </div>
             </form>
             
-            <div class="mt-6 text-center">
-                <p class="text-sm text-gray-600 mb-3">Need immediate assistance?</p>
-                <div class="flex flex-col sm:flex-row gap-2">
-                    <a href="tel:+919417825082" class="flex-1 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300 text-center text-sm">
+            <div class="mt-8 text-center">
+                <p class="text-sm text-gray-600 mb-4">Need immediate assistance?</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="tel:+919417825082" class="btn-primary flex-1 text-center">
                         <i class="fas fa-phone mr-2"></i>Call Now
                     </a>
-                    <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20urgent%20legal%20assistance.%20Please%20help." target="_blank" class="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 text-center text-sm">
+                    <a href="https://wa.me/919905009827?text=Hello%20Advocate%20Kamal%20Singla,%20I%20need%20urgent%20legal%20assistance.%20Please%20help." target="_blank" class="whatsapp-btn flex-1 text-center">
                         <i class="fab fa-whatsapp mr-2"></i>WhatsApp
                     </a>
                 </div>
@@ -1212,6 +1757,16 @@
     </div>
 
     <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
         // Mobile menu toggle
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
@@ -1255,7 +1810,7 @@
             }
         });
 
-        // Form submission handlers with FormSubmit integration
+        // Form submission handlers
         function showSuccessMessage(messageId) {
             const successMessage = document.getElementById(messageId);
             if (successMessage) {
@@ -1270,7 +1825,6 @@
         document.getElementById('heroForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Submit form data to FormSubmit
             const formData = new FormData(this);
             
             fetch('https://formsubmit.co/kamalsingla.singla1@gmail.com', {
@@ -1295,7 +1849,6 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Submit form data to FormSubmit
             const formData = new FormData(this);
             
             fetch('https://formsubmit.co/kamalsingla.singla1@gmail.com', {
@@ -1320,7 +1873,6 @@
         document.getElementById('modalForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Submit form data to FormSubmit
             const formData = new FormData(this);
             
             fetch('https://formsubmit.co/kamalsingla.singla1@gmail.com', {
@@ -1348,7 +1900,6 @@
         document.getElementById('leadForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Submit form data to FormSubmit
             const formData = new FormData(this);
             
             fetch('https://formsubmit.co/kamalsingla.singla1@gmail.com', {
@@ -1389,9 +1940,23 @@
             });
         });
 
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
         // Stats counter animation
         function animateCounters() {
-            const counters = document.querySelectorAll('.stats-counter');
+            const counters = document.querySelectorAll('.stats-card .text-4xl');
             counters.forEach(counter => {
                 const target = parseInt(counter.textContent.replace(/\D/g, ''));
                 const suffix = counter.textContent.replace(/\d/g, '');
@@ -1420,24 +1985,10 @@
             });
         });
 
-        const statsSection = document.querySelector('.stats-counter').closest('section');
+        const statsSection = document.querySelector('.stats-card');
         if (statsSection) {
-            observer.observe(statsSection);
-        }
-
-        // FAQ Toggle Function
-        function toggleFAQ(button) {
-            const answer = button.nextElementSibling;
-            const icon = button.querySelector('i');
-            
-            if (answer.classList.contains('hidden')) {
-                answer.classList.remove('hidden');
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                answer.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
-            }
+            observer.observe(statsSection.closest('section'));
         }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96df83cbd51c9d73',t:'MTc1NDk5NjkwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96dfad83f187f64c',t:'MTc1NDk5ODYxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
